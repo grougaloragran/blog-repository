@@ -1,0 +1,48 @@
+// Place all the styles related to the Blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body{
+    background-color: #E0FFFF;
+    margin: 50px;
+}
+.picture1{
+    position: relative;
+    left: 600px;
+    top: -200px;
+}
+.picture2{
+    position: relative;
+    left: 600px;
+    top: -200px;
+}
+.difference{
+     position: relative;
+    left: 1000px;
+    top: -550px;
+    color: #FF0000;
+    font-size: 50px;
+}
+.dot{
+    position: relative;
+    left: 750px;
+    top: -530px;
+    text-decoration: none;
+}
+.picture3{
+     position: relative;
+    left: 950px;
+    top: -630px;
+}
+.picture4{
+    position: relative;
+    left: 950px;
+    top: -1230px;
+}
+
+.dot1{
+     position: relative;
+    left: 1000px;
+    top: -1399px;
+    text-decoration: none;
+}

@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Blogs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>Title</th>
+      <th>Body</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @blogs.each do |blog| %>
+      <tr>
+        <td><%= blog.title %></td>
+        <td><%= blog.body %></td>
+        <td><%= link_to 'Show', blog %></td>
+        <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+        <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Blog', new_blog_path %>
+
+<body>
+  <div class="picture1">
+    <img src="http://i.dailymail.co.uk/i/pix/2016/03/10/16/321177F500000578-3485975-image-a-63_1457625965529.jpg">
+  </div>
+  <div class="picture2">
+    <img src="http://i.dailymail.co.uk/i/pix/2016/03/10/16/321177F500000578-3485975-image-a-63_1457625965529.jpg">
+  </div>
+  <p class="difference">
+    Spot the difference
+  </p>
+  <h6 class="dot">
+    <a href="https://cdn.shopify.com/s/files/1/0187/2830/products/0510-You-Did-It_1024x1024.jpg?v=1408583383">.</a>
+  </h6>
+  <div class="picture3">
+    <img src="https://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png">
+  </div>
+  <div class="picture4">
+    <img src="https://cdn.bulbagarden.net/upload/thumb/0/0d/025Pikachu.png/250px-025Pikachu.png">
+  </div>
+  <h6 class="dot1">
+    <a href="https://cdn.shopify.com/s/files/1/0187/2830/products/0510-You-Did-It_1024x1024.jpg?v=1408583383">.</a>
+  </h6>
+</body>
