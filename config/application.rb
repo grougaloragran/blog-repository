@@ -17,6 +17,12 @@ require "sprockets/railtie"
 Bundler.require(*Rails.groups)
 
 module DevcampPortfolio
+  class Application < Rails::application
+    
+  end
+end
+
+module DevcampPortfolio
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
