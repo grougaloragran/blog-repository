@@ -5,9 +5,4 @@ class ApplicationController < ActionController::Base
   include CurrentUserConcern
   include DefaultPageContent
   
-  before_action :set_copyright
-  
-  def set_copyright
-    @copyright = DevcampViewTool::Renderer.copyright 'Jordan Hudgens', 'All rights reserved'
-  end
 end

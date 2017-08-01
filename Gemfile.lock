@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/grougaloragran/belliston_devcamp_view_tool
+  revision: c6ad5daee41ad58ac92586a0dde31f5b634a2a01
+  specs:
+    belliston_devcamp_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -181,6 +187,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  belliston_devcamp_view_tool!
   bootstrap (~> 4.0.0.alpha6)
   byebug
   coffee-rails (~> 4.2)
