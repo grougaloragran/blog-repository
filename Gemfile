@@ -57,3 +57,4 @@ gem 'devise', '~> 4.2'
 gem 'belliston_devcamp_view_tool', git: 'https://github.com/grougaloragran/belliston_devcamp_view_tool'
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
+gem 'petergate', '~> 1.7', '>= 1.7.5'
