@@ -60,3 +60,10 @@ puts "9 porfolio items created"
 end
 
 puts "3 technologies created"
+
+User.create!(
+  name: "Adam",
+  email: "adam.b280@stu.nebo.edu",
+  password: "asdfgh",
+  roles: "site_admin"
+  )
