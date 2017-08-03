@@ -15,7 +15,7 @@
     
     <%= render 'shared/porfolio_nav' %>
   
-    <%= render 'shared/porfolio_masthead'%>
+    <%= render 'shared/porfolio_masthead' unless logged_in?(:site_admin)%>
   
 
     <%= yield %>
