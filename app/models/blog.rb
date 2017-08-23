@@ -3,8 +3,15 @@ class Blog < ApplicationRecord
     extend FriendlyId
     friendly_id :title, use: :slugged
 
-validates_presence_of :title, :body
-
-belongs_to :topic
+    validates_presence_of :title, :body
+    
+    belongs_to :topic
+    
+    after_initialize :set_defaults
+    
+    private
+        def set_defaults
+            self.topic ||= Topic.first
+        end
 end
 
