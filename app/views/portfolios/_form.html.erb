@@ -1,4 +1,10 @@
-
+<%= form_for(blog) do |form| %>
+    <% if blog.errors.any? %>
+      <% blog.errors.full_messages.each do |error| %>
+            <%= js add_gritter(flash[:notice], title: "Adam Belliston Portfolio", stickey: false) %>
+      <% end %>
+  <% end %>
+  
 <%= form_for(@portfolio_item) do |f| %>
 <div class="row">
   <div class="col-md-6">
