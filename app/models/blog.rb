@@ -15,5 +15,9 @@ class Blog < ApplicationRecord
         def set_defaults
             self.topic ||= Topic.first
         end
+        
+    def self.recent
+       order("created_at DESC") 
+    end
 end
 
