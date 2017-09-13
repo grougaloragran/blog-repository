@@ -12,10 +12,12 @@
     <%= @blog.body %>
   </p>
   
+  <p>
+    <%= markdown @blog.body %> 
+  </p>
+  
   <%= render 'comments/comment_form' %>
+  
    <div id="comments" data-blog-id="<%= @blog.id %>">
      <%= render @blog.comments %>
    </div>
-
-
-
