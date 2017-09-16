@@ -7,32 +7,32 @@
   <div class="row">
   <div class="col-md-6">
   <div class="form-group">
-    <%= f.label :title %>
-    <%= f.text_area :title, class: 'form-control' %>
+    <%= form.label :title %>
+    <%= form.text_area :title, class: 'form-control' %>
   </div>
 
  <div class="form-group">
-    <%= f.label :subtitle %>
-    <%= f.text_area :subtitle, class: 'form-control' %>
+    <%= form.label :subtitle %>
+    <%= form.text_area :subtitle, class: 'form-control' %>
   </div>
   
     <div class="form-group">
       <label class="btn btn-primary">
-      Upload a main image file <%= f.text_area :main_image, style: 'display:none;' %>
+      Upload a main image file <%= form.text_area :main_image, style: 'display:none;' %>
       </label>
     </div>
     
       <div class="form-group">
       <label class="btn btn-primary">
-      Upload a thumb image file <%= f.text_area :thumb_image, style: 'display:none;' %>
+      Upload a thumb image file <%= form.text_area :thumb_image, style: 'display:none;' %>
       </label>
     </div>
   </div>
   
   <div class="col-md-6">
     <div class="form-group">
-      <%= f.label :body %>
-      <%= f.text_area :body, class: 'form-control', rows: 13%>
+      <%= form.label :body %>
+      <%= form.text_area :body, class: 'form-control', rows: 13%>
     </div>
   </div>
 </div>
@@ -42,17 +42,17 @@
   <div class="col-md-12">
   <h2> Technologies </h2>
     <div>
-      <%= f.fields_for :technologies do |technology_form| %>
-        <%= render 'technology_fields', f: technology_form %>
+      <%= form.fields_for :technologies do |technology_form| %>
+        <%= render 'technology_fields', form: technology_form %>
         <%end%>
         
       <div>
-        <%= link_to_add_association 'Add Technology', f, :technologies %>  
+        <%= link_to_add_association 'Add Technology', form, :technologies %>  
       </div>
     </div>
     
     <div class="form-group">
-      <%= f.submit 'save portfolio item', class: 'btn btn-primary btn-block' %>
+      <%= form.submit 'save portfolio item', class: 'btn btn-primary btn-block' %>
     </div>
   </div>
 <% end %>
