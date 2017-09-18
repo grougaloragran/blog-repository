@@ -1,3 +1,4 @@
+
 ready = undefined
 set_positions = undefined
 
@@ -18,11 +19,11 @@ ready = ->
         id: $(this).data('id')
         position: i + 1
       return
-     $.ajax
-       type: 'PUT'
-       url: '/porfolios/sort'
-       data: order: updated_order
-     return
+    $.ajax
+      type: 'PUT'
+      url: '/portfolios/sort'
+      data: order: updated_order
+    return
   return
-  
+
 $(document).ready ready
